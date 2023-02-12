@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Módulo 13</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <h1 id="home">
+                    <img src="/images/logo.png" alt="logo harry potter" />
+                </h1>
+                <div class="bg-dark">
+                    <button type="button" class="navbar-toggler btn btn-dark active" data-bs-toggle="collapse"
+                        data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav ">
+                        <li class="nav-item">
+                            <a href="#carousel" class="nav-link active">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#casas">Casas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#personagens">Os Melhores</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="carousel">
+            <div id="carousel-exemplo" class="carousel carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <a href="#"><img class="w-100" src="/images/carousel-1.jpg"
+                                alt="Imagem batalha Hary Potter" /></a>
+                        <div class="carousel-caption text-start">
+                            <h1>Foto XPTO</h1>
+                            <h5>Subtítulo</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="btn btn-dark">Leia mais</button>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <a href="#"><img class="d-block w-100" src="/images/carousel-2.jpg"
+                                alt="Imagem Harry Potter com reflexo Dumbledore nos óculos" /></a>
+                        <div class="carousel-caption text-start ">
+                            <h1>Foto XPTO</h1>
+                            <h5>Subtítulo</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="btn btn-dark">Leia mais</button>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <a href="#"><img class="d-block w-100" src="/images/carousel-3.jpg"
+                                alt="Imagem Voldemort com a varinha na mão" /></a>
+                        <div class="carousel-caption text-start">
+                            <h1>Foto XPTO</h1>
+                            <h5>Subtítulo</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="btn btn-dark">Leia mais</button>
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev"
+                    type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next"
+                    type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active"
+                        data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </section>
+        <section id="casas">
+            <div class="container ">
+                <h2>Casas</h2>
+                <img src="./images/separator.png" class="img-fluid mx-auto d-block" />
+                <div class="row ">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 p-3 ">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/gryffindor.jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title">Grifinória</h5>
+                                <p class="card-text">Descrição da casa XPTO</p>
+                                <a href="#" class="btn btn-outline-danger">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 p-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/hufflepuff.jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title">Lufa-Lufa</h5>
+                                <p class="card-text">Descrição da casa XPTO</p>
+                                <a href="#" class="btn btn-outline-warning">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 p-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/ravenclaw.jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title">Corvinal</h5>
+                                <p class="card-text">Descrição da casa XPTO</p>
+                                <a href="#" class="btn btn-outline-info">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 p-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/slytherin.jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title">Sonserina</h5>
+                                <p class="card-text">Descrição da casa XPTO</p>
+                                <a href="#" class="btn btn-outline-success">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="personagens">
+            <div class="container">
+                <h2>Principais personagens de cada casa</h2>
+            </div>
+            <div class="row personagens container mx-auto d-flex justify-content-between">
+                <img src="./images/separator_grif.png" class="pt-5 p-lg-12" />
+                <div class="col-lg-6 col-md-6 order-2 order-lg-2">
+                    <img src="./images/harry.jpg" class="img-fluid rounded float-end" alt="Harry Potter" />
+                </div>
+                <div class="col-lg-6 col-md-6 pt-4 order-1 order-lg-1 d-flex align-content-center flex-wrap">
+                    <h3>Harry Potter. <span class="text-muted">A Orcrux de Grifinória.</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci ducimus. Ducimus modi
+                        expedita mollitia quaerat iste, quisquam magnam rerum id distinctio esse nemo? Non vitae
+                        repellat nulla sed repellendus?</p>
+                </div>
+            </div>
+            <div class="row personagens container mx-auto d-flex justify-content-between">
+                <img src="./images/separator_lufa.png" class="pt-5 p-lg-12" />
+                <div class="col-lg-6 col-md-6 order-2 order-lg-1">
+                    <img src="./images/cedric.jpg" class="img-fluid rounded float-start" alt="Cedrico" />
+                </div>
+                <div
+                    class="col-lg-6 col-md-6 pt-4 order-1 order-lg-2 d-flex align-content-center flex-wrap justify-content-end text-end">
+                    <h3>Cedrico. <span class="text-muted">O campeão de Lufa-Lufa.</span></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci ducimus. Ducimus
+                            modi expedita mollitia quaerat iste, quisquam magnam rerum id distinctio esse nemo? Non
+                            vitae repellat nulla sed repellendus?</p>
+                </div>
+            </div>
+            <div class="row personagens container mx-auto d-flex justify-content-between">
+                <img src="./images/separator_corv.png" class="pt-5 p-lg-12" />
+                <div class="col-lg-6 col-md-6 order-2 order-lg-2">
+                    <img src="./images/luna.jpg" class="img-fluid rounded float-end" alt="Luna" />
+                </div>
+                <div class="col-lg-6 col-md-6 pt-4 order-1 order-lg-1 d-flex align-content-center flex-wrap">
+                    <h3>Luna. <span class="text-muted">A sábia de Corvinal.</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci ducimus. Ducimus modi
+                        expedita mollitia quaerat iste, quisquam magnam rerum id distinctio esse nemo? Non vitae
+                        repellat nulla sed repellendus?</p>
+                </div>
+            </div>
+            <div class="row personagens container mx-auto d-flex justify-content-between">
+                <img src="./images/separator_sons.png" class="pt-5 p-lg-12" />
+                <div class="col-lg-6 col-md-6 order-2 order-lg-1">
+                    <img src="./images/vold.jpg" class="img-fluid rounded float-start" alt="Voldemort" />
+                </div>
+                <div
+                    class="col-lg-6 col-md-6 pt-4 order-1 order-lg-2 d-flex align-content-center flex-wrap justify-content-end text-end">
+                    <h3>Voldemort. <span class="text-muted">Você sabe quem de Sonserina.</span></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci ducimus. Ducimus
+                            modi expedita mollitia quaerat iste, quisquam magnam rerum id distinctio esse nemo? Non
+                            vitae repellat nulla sed repellendus?</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <img src="./images/separator.png" class="img-fluid mx-auto d-block p-4" />
+    <footer class="container">
+        <p>&copy; Todos direitos reservados a Fã Club Fícticio Harry Potter - 2023.</p>
+        <p class="float-right">
+            <a href="#carousel">Voltar ao topo</a>
+        </p>
+    </footer>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
